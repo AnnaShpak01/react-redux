@@ -5,6 +5,6 @@ export function makeNews(news) {
     return { type: MAKE_NEWS, news }
   }
 
-  export function changeText(text) {
-    return { type: CHANGE_TEXT, text }
+  export function changeText(filterText) {
+    return { type: CHANGE_TEXT, filterText }
   }

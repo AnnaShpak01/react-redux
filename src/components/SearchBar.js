@@ -8,10 +8,7 @@ export default function SearchBar({ toFilterNews }) {
       setInput(e.target.value );
    };
  
-   const onBtnClickHandler = () => {
-      toFilterNews("");
-      setInput("");
-   };
+   
  
    return (
      <React.Fragment>
@@ -25,13 +22,7 @@ export default function SearchBar({ toFilterNews }) {
           value={inputState}
        />
  
-       <button
-         type="button"
-         className="input-group-text"
-          onClick={onBtnClickHandler}
-       >
-         <span>filter</span>
-       </button>
+      
      </React.Fragment>
    );
  }
