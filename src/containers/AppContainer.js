@@ -1,16 +1,18 @@
-import { makeNews, changeText } from "../actions";
+import { makeNews, changeText, errorMessage} from "../actions";
 import App from "../components/App";
 import { connect } from "react-redux";
 
 function mapStateToProps(state) {
   return {
     news: state.news,
-    filterText: state.filterText
+    filterText: state.filterText,
+    errorText: state.errorText
   };
 }
 const mapDispatchToProps = {
   makeNews,
-  changeText
+  changeText,
+  errorMessage
 };
 
 export default connect(
